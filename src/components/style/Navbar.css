@@ -1,0 +1,58 @@
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition-timing-function: ease-in;
+    transition:0.1s;
+    z-index: 12;
+    
+}
+.nav__blue{
+    background-color: #032541;
+
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.nav-list {
+    padding: 20px;
+    width: 40%;
+}
+
+.nav ul {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.nav ul li {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    display: row;
+
+    list-style: none;
+
+    color: #fff;
+}
+
+li {
+    cursor: pointer;
+}
+.icon{
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}

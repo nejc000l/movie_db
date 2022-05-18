@@ -9,7 +9,8 @@ function CircularProgess({ movie }) {
       <div
         style={{
           // make css div backgroundColor circular
-
+          background: "#081c22",
+          padding:2,
           width: 50,
           zIndex: 10,
           position: "relative",
@@ -21,14 +22,15 @@ function CircularProgess({ movie }) {
           value={percentage}
           text={`${percentage}*`}
           styles={{
+
             path: {
               stroke: "#07c535",
             },
             trail: {
-              stroke: "#0000",
+              stroke: "#204529",
             },
             text: {
-              fill: "#07c535",
+              fill: "#fff",
               fontSize: "30px",
               fontWeight: "bold",
             },
@@ -41,6 +43,8 @@ function CircularProgess({ movie }) {
     return (
       <div
         style={{
+          background: "#081c22",
+          padding:2,
           width: 50,
           zIndex: 10,
           position: "relative",
@@ -57,7 +61,7 @@ function CircularProgess({ movie }) {
             },
 
             trail: {
-              stroke: "#0000",
+              stroke: "#204529",
             },
             text: {
               fill: "#bec12e",
