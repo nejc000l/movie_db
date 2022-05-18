@@ -9,7 +9,10 @@
     border-radius: 10px;
     box-shadow: 8px 6px 6px  #eeececc0;
     overflow: hidden;
-    margin-top: 0;
+    margin-top: -50px;
+    height:400px;
+    object-fit: cover;
+
 }
 .movie-info{
     font-family: 'Source Sans Pro', sans-serif;
