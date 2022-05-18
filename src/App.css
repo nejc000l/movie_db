@@ -80,7 +80,7 @@
 }
 @media screen and (max-width: 1200px) {
     .container {
-        grid-template-columns: repeat(2, minmax(200px, 50%));
+        grid-template-columns: repeat(2, minmax(200px, 20%));
     }
 }
 

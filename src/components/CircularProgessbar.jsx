@@ -1,5 +1,5 @@
 import React from "react";
-import { CircularProgressbar,buildStyles } from "react-circular-progressbar";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./style/custom.css";
 function CircularProgess({ movie }) {
@@ -8,7 +8,7 @@ function CircularProgess({ movie }) {
     return (
       <div
         style={{
-         // make css div backgroundColor circular
+          // make css div backgroundColor circular
 
           width: 50,
           zIndex: 10,
@@ -21,16 +21,15 @@ function CircularProgess({ movie }) {
           value={percentage}
           text={`${percentage}*`}
           styles={{
-            backgroundColor: '#3e98c7',
-
-
             path: {
               stroke: "#07c535",
             },
-
+            trail: {
+              stroke: "#0000",
+            },
             text: {
               fill: "#07c535",
-              fontSize: "16px",
+              fontSize: "30px",
               fontWeight: "bold",
             },
           }}
@@ -38,7 +37,7 @@ function CircularProgess({ movie }) {
       </div>
     );
   }
-  if(percentage <=70 ) {
+  if (percentage <= 70) {
     return (
       <div
         style={{
@@ -54,12 +53,16 @@ function CircularProgess({ movie }) {
           text={`${percentage}*`}
           styles={{
             path: {
-              stroke:"#bec12e",
+              stroke: "#bec12e",
             },
-            
 
+            trail: {
+              stroke: "#0000",
+            },
             text: {
               fill: "#bec12e",
+              fontSize: "30px",
+              padding: "10px",
               fontWeight: "bold",
             },
           }}
@@ -68,11 +71,9 @@ function CircularProgess({ movie }) {
     );
   }
 
-
   return (
     <div
       style={{
-
         width: 50,
         zIndex: 10,
         position: "relative",
@@ -82,9 +83,7 @@ function CircularProgess({ movie }) {
       }}
     >
       <CircularProgressbar
-        style={{
-
-        }}
+        style={{}}
         value={percentage}
         text={`${percentage}*`}
       />

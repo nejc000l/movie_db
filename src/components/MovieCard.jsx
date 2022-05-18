@@ -10,7 +10,7 @@ const MovieCard = ({ movie }) => {
 
   return (
     <div>
-    <div className="progressBard">
+    <div className="progressBar">
     <CircularProgess movie={movie}/>
 
     </div>
