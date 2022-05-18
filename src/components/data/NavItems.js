@@ -7,25 +7,25 @@ export const navItems = [
   },
   {
     id: 2,
-    title: "TV Shows",
-    path: "./services",
+    title: "Tv Shows",
+    path: "./",
     cName: "nav-item",
   },
   {
     id: 3,
     title: "People",
-    path: "./products",
+    path: "./",
     cName: "nav-item",
   },
   {
     id: 4,
     title: "More",
-    path: "./contactus",
+    path: "./",
     cName: "nav-item",
   },
 ];
 
-export const moviesDropdown = [
+export const serviceDropdown1 = [
   {
     id: 1,
     title: "Popular",
@@ -34,7 +34,7 @@ export const moviesDropdown = [
   },
   {
     id: 2,
-    title: "Now Playing",
+    title: "Now PLaying",
     path: "./consulting",
     cName: "submenu-item",
   },
@@ -52,7 +52,7 @@ export const moviesDropdown = [
   },
 ];
 
-export const tvDropdown = [
+export const serviceDropdown2 = [
   {
     id: 1,
     title: "Popular",
@@ -78,7 +78,8 @@ export const tvDropdown = [
     cName: "submenu-item",
   },
 ];
-export const popularDropdown = [
+
+export const serviceDropdown3 = [
   {
     id: 1,
     title: "Popular People",
@@ -86,7 +87,8 @@ export const popularDropdown = [
     cName: "submenu-item",
   }
 ];
-export const moreDropdown = [
+
+export const serviceDropdown4 = [
   {
     id: 1,
     title: "Discussion",
@@ -94,21 +96,21 @@ export const moreDropdown = [
     cName: "submenu-item",
   },
   {
-    id: 2,
-    title: "Laderboard",
-    path: "./consulting",
+    id: 1,
+    title: "Leader Board",
+    path: "./marketing",
     cName: "submenu-item",
   },
   {
-    id: 3,
+    id: 1,
     title: "Support",
-    path: "./design",
+    path: "./marketing",
     cName: "submenu-item",
   },
   {
-    id: 4,
+    id: 1,
     title: "API",
-    path: "./development",
+    path: "./marketing",
     cName: "submenu-item",
-  },
+  }
 ];

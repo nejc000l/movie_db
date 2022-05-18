@@ -1,5 +1,7 @@
 import "./App.css";
 import axios from "axios";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import React, { useEffect, useState } from "react";
 import MovieCard from "./components/MovieCard";
 import Navbar from "./components/Navbar";
@@ -30,7 +32,9 @@ function App() {
   const showMovies = () =>
   filterd.map((movie) => <MovieCard key={movie.id} movie={movie} />);
   return (
+
     <div className="App">
+    <BrowserRouter>
       <Navbar />
       <main>
         <div className="container-wrapper">
@@ -51,6 +55,7 @@ function App() {
           </div>
         </div>
       </main>
+      </BrowserRouter>
     </div>
   );
 }

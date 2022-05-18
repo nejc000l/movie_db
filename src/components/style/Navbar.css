@@ -1,71 +1,50 @@
-nav {
+.navbar {
+    height: 10vh;
     width: 100%;
-    position: fixed;
-    top: 0;
-    transition-timing-function: ease-in;
-    transition:0.1s;
-    z-index: 12;
-    
-}
-.nav__blue{
     background-color: #032541;
-
-}
-
-.nav-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.nav-list {
-    padding: 20px;
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.nav-item{
-    display: flex;
-    justify-content:space-around;
-    width: 50%;
+    justify-content: space-evenly;
     align-items: center;
-}
+    padding-left: 15rem;
+    padding-right: 15rem;
 
-.nav ul {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.nav  ul li {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
-    display: row;
-
-    list-style: none;
-
-    color: #fff;
-}
-
-li a{
-    cursor: pointer;
-    color: #fff;
-    font-weight: 600;
-    padding-left:15px;
+  }
+  
+  .navbar-logo {
+    color: white;
     text-decoration: none;
-
-}
-
-.icon{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10rem;
+  }
+  
+  .nav-items {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: flex-start;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    padding: 6px 16px;
+    border-radius: 5px;
+  }
+  
+  .icon{
     margin: 10px;
     font-size: 20px;
     color: white;
@@ -75,21 +54,15 @@ li a{
     align-items: center;
 }
 
-@media screen and (min-width: 1400px) {
-    .nav-list {
-        width: 40%;
-    }
-}
-    
-@media screen and (max-width: 1400px) {
-    .nav-list {
-        width: 60%;
-    }
-}
-    
 @media screen and (max-width: 900px) {
-    .nav-list {
-        width: 20%;
-    }
-}
+ .icons-list{
+     visibility: hidden;
+ }
+ .navbar{
+   padding-left: 0;
+   padding-right: 0;
+
+ }
+
     
+}
