@@ -15,9 +15,8 @@ nav {
 .nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1000px;
+    justify-content: space-around;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     
@@ -25,7 +24,16 @@ nav {
 
 .nav-list {
     padding: 20px;
-    width: 40%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.nav-item{
+    display: flex;
+    justify-content:space-around;
+    width: 50%;
+    align-items: center;
 }
 
 .nav ul {
@@ -37,7 +45,7 @@ nav {
 
 }
 
-.nav ul li {
+.nav  ul li {
     margin-left: auto;
     margin-right: auto;
     padding-top: 0;
@@ -48,11 +56,40 @@ nav {
     color: #fff;
 }
 
-li {
+li a{
     cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding-left:15px;
+    text-decoration: none;
+
 }
+
 .icon{
     margin: 10px;
     font-size: 20px;
     color: white;
 }
+.icons-list{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 1400px) {
+    .nav-list {
+        width: 40%;
+    }
+}
+    
+@media screen and (max-width: 1400px) {
+    .nav-list {
+        width: 60%;
+    }
+}
+    
+@media screen and (max-width: 900px) {
+    .nav-list {
+        width: 20%;
+    }
+}
+    

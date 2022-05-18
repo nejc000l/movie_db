@@ -4,6 +4,10 @@
     margin-left:0;
   
 }
+main{
+    margin:9rem 0;
+
+}
 .container-wrapper{
     display: flex;
     width: 70%;
